@@ -1,14 +1,24 @@
 .tourist-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  margin-bottom: 59px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .tourist-list__item {
   padding-left: 66px;
   padding-right: 19px;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 101px;
+  }
 }
 
 .tourist-list__item:last-of-type {
