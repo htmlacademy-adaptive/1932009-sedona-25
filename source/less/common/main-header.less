@@ -5,6 +5,11 @@
   padding: 17px 19px;
   box-sizing: border-box;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 768px;
+  }
 }
 
 .main-header__logo {
@@ -15,6 +20,10 @@
   margin: auto;
   position: absolute;
   width: 185px;
+
+  @media (min-width: @tablet-width) {
+    z-index: 1;
+  }
 }
 
 .main-header__toggle {
@@ -27,6 +36,10 @@
   background-image: url("../img/toggle-1.svg");
   margin-left: auto;
   align-self: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__toggle:hover {

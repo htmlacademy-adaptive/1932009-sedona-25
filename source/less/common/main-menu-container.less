@@ -6,6 +6,12 @@
   position: absolute;
   left: 0;
   top: -56px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background-color: @white;
+    display: block;
+  }
 }
 
 .main-menu-container__toggle {
@@ -17,6 +23,10 @@
   position: absolute;
   top: 17px;
   right: 19px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-menu-container--open {

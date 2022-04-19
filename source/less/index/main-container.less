@@ -1,4 +1,4 @@
-.main-container__intro-image {
+.main-container__intro-image-container {
   min-height: 389px;
   max-width: 320px;
   min-width: 320px;
@@ -12,6 +12,24 @@
   background-color: rgba(87, 105, 177, 1);
   margin: 0 auto;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-desktop.jpg");
+    min-width: 768px;
+    min-height: 518px;
+    padding-top: 77px;
+    padding-left: 153px;
+  }
+}
+
+.main-container__intro-image {
+  width: 282px;
+  height: 214px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .main-container__main-title {
