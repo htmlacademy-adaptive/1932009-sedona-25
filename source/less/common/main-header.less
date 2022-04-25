@@ -1,14 +1,14 @@
-.main-header__container-1 {
+.main-header {
   position: relative;
   margin: 0 auto;
   width: 320px;
-  padding: 17px 19px;
-  box-sizing: border-box;
-  display: flex;
 
-  @media (min-width: @tablet-width) {
-    display: block;
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
     width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 }
 
