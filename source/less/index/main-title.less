@@ -3,5 +3,19 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  margin: 0;
+  width: 320px;
+  padding: 0 19px;
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 520px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-title br {
+    display: none;
+  }
 }

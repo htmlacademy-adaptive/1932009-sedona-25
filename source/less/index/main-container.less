@@ -1,9 +1,47 @@
-.main-container__intro-image {
+.main-container__intro-image-container {
+  min-height: 389px;
   width: 320px;
-  height: 389px;
-  background-image: url("../img/intro-image.png");
+  background-image: url("../img/intro-image.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
   padding-left: 19px;
+  padding-right: 19px;
   padding-top: 90px;
   box-sizing: border-box;
   background-color: rgba(87, 105, 177, 1);
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+    width: 768px;
+    min-height: 518px;
+    padding-top: 77px;
+    padding-left: 153px;
+    margin-bottom: 47.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+    width: 1200px;
+    min-height: 518px;
+    padding-top: 77px;
+    padding-left: 370px;
+    margin-bottom: 47.5px;
+  }
+}
+
+.main-container__intro-image {
+  width: 282px;
+  height: 214px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.main-container__main-title {
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
