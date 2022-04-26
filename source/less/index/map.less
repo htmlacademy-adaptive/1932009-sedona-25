@@ -14,6 +14,18 @@
   }
 }
 
+.map iframe {
+  border: none;
+
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
 .map__image {
   display: block;
 }
