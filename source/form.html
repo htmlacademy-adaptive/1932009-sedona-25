@@ -176,24 +176,24 @@
           <legend class="form__legend">Ваше общее впечатление:</legend>
           <ul class="form__list">
             <li class="form__list-item">
-              <label class="form__list-item-choice choice">
-                <input class="choice__radio" type="radio" name="user-voice" value="good">
-                <span class="choice__mark"></span>
-                <span class="choice__label">Скорее положительное</span>
+              <label class="form__list-item-choice radiobutton">
+                <input class="radiobutton__input" type="radio" name="user-voice" value="good">
+                <span class="radiobutton__mark"></span>
+                <span class="radiobutton__label">Скорее положительное</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__list-item-choice choice">
-                <input class="choice__radio" type="radio" name="user-voice" value="bad">
-                <span class="choice__mark"></span>
-                <span class="choice__label">Скорее отрицательное</span>
+              <label class="form__list-item-choice radiobutton">
+                <input class="radiobutton__input" type="radio" name="user-voice" value="bad">
+                <span class="radiobutton__mark"></span>
+                <span class="radiobutton__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__list-item-choice choice">
-                <input class="choice__radio" type="radio" name="user-voice" value="neutral">
-                <span class="choice__mark"></span>
-                <span class="choice__label">Затрудняюсь ответить</span>
+              <label class="form__list-item-choice radiobutton">
+                <input class="radiobutton__input" type="radio" name="user-voice" value="neutral">
+                <span class="radiobutton__mark"></span>
+                <span class="radiobutton__label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -202,31 +202,31 @@
           <legend class="form__legend">Посещенные достопримечательности:</legend>
           <ul class="form__list">
             <li class="form__list-item">
-              <label class="form__list-item-choice choice">
-                <input class="choice__checkbox" type="checkbox" name="devil-bridge" checked>
-                <span class="choice__mark choice__mark--check"></span>
+              <label class="form__list-item-choice checkboxbutton">
+                <input class="checkboxbutton__input" type="checkbox" name="devil-bridge" checked>
+                <span class="checkboxbutton__mark"></span>
                 <span class="choice__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__list-item-choice choice">
-                <input class="choice__checkbox" type="checkbox" name="mountaine-bell" checked>
-                <span class="choice__mark choice__mark--check"></span>
-                <span class="choice__label">Гора-Колокол</span>
+              <label class="form__list-item-choice checkboxbutton">
+                <input class="checkboxbutton__input" type="checkbox" name="mountaine-bell" checked>
+                <span class="checkboxbutton__mark"></span>
+                <span class="checkboxbutton__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__list-item-choice choice">
-                <input class="choice__checkbox" type="checkbox" name="slide-park" checked>
-                <span class="choice__mark choice__mark--check"></span>
-                <span class="choice__label">Слайд-парк</span>
+              <label class="form__list-item-choice checkboxbutton">
+                <input class="checkboxbutton__input" type="checkbox" name="slide-park" checked>
+                <span class="checkboxbutton__mark"></span>
+                <span class="checkboxbutton__label">Слайд-парк</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__list-item-choice choice">
-                <input class="choice__checkbox" type="checkbox" name="red-rocks">
-                <span class="choice__mark choice__mark--check"></span>
-                <span class="choice__label">Красные скалы</span>
+              <label class="form__list-item-choice checkboxbutton">
+                <input class="checkboxbutton__input" type="checkbox" name="red-rocks">
+                <span class="checkboxbutton__mark"></span>
+                <span class="checkboxbutton__label">Красные скалы</span>
               </label>
             </li>
           </ul>
@@ -236,79 +236,6 @@
           <label class="visually-hidden" for="user-feedback-text">Поле для ввода текста отзыва</label>
           <textarea class="form__textarea" name="user-feedback-text" id="user-feedback-text" placeholder="Опишите подробно все свои восторги" rows="6"></textarea>
         </fieldset>
-        <!-- <ul class="form__list"> -->
-          <!-- <li class="form__list-item">
-            <p class="form__list-item-description">
-              Представьтесь:
-            </p>
-            <label class="form__list-item-label" for="user-name">Имя*:</label>
-            <input class="form__list-item-input" type="text" name="user-name" id="user-name" value="Пётр">
-            <label class="form__list-item-label" for="user-second-name">Фамилия*:</label>
-            <input class="form__list-item-input" type="text" name="user-second-name" id="user-second-name" value="Пустота">
-            <label class="form__list-item-label" for="user-patronymic">Отчество:</label>
-            <input class="form__list-item-input" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
-          </li> -->
-          <!-- <li class="form__list-item">
-            <p class="form__list-item-description">
-              Контактная информация:
-            </p>
-            <label class="form__list-item-label" for="user-phone">Контактный телефон*:</label>
-            <input class="form__list-item-input" type="tel" name="user-phone" id="user-phone" placeholder="Введите телефон">
-            <label class="form__list-item-label" for="user-email">Электронная почта*:</label>
-            <input class="form__list-item-input" type="email" name="user-email" id="user-email" placeholder="Введите e-mail">
-          </li> -->
-          <!-- <li class="form__list-item">
-            <p class="form__list-item-description">
-             Ваше общее впечатление:
-            </p>
-            <label class="form__list-item-choice choice">
-              <input class="choice__input" type="radio" name="user-voice" value="good">
-              <span class="choice__mark"></span>
-              <span class="choice__label">Скорее положительное</span>
-            </label>
-            <label class="form__list-item-choice choice">
-              <input class="choice__input" type="radio" name="user-voice" value="bad">
-              <span class="choice__mark"></span>
-              <span class="choice__label">Скорее отрицательное</span>
-            </label>
-            <label class="form__list-item-choice choice">
-              <input class="choice__input" type="radio" name="user-voice" value="neutral">
-              <span class="choice__mark"></span>
-              <span class="choice__label">Затрудняюсь ответить</span>
-            </label>
-          </li> -->
-          <!-- <li class="form__list-item">
-            <p class="form__list-item-description">
-              Посещенные достопримечательности:
-             </p>
-            <label class="form__list-item-choice choice">
-              <input class="choice__input" type="checkbox" name="devil-bridge" checked>
-              <span class="choice__mark choice__mark--check"></span>
-              <span class="choice__label">Мост Дьявола</span>
-            </label>
-            <label class="form__list-item-choice choice">
-              <input class="choice__input" type="checkbox" name="mountaine-bell" checked>
-              <span class="choice__mark choice__mark--check"></span>
-              <span class="choice__label">Гора-Колокол</span>
-            </label>
-            <label class="form__list-item-choice choice">
-              <input class="choice__input" type="checkbox" name="slide-park" checked>
-              <span class="choice__mark choice__mark--check"></span>
-              <span class="choice__label">Слайд-парк</span>
-            </label>
-            <label class="form__list-item-choice choice">
-              <input class="choice__input" type="checkbox" name="red-rocks">
-              <span class="choice__mark choice__mark--check"></span>
-              <span class="choice__label">Красные скалы</span>
-            </label>
-          </li> -->
-          <!-- <li class="form__list-item">
-            <p class="form__list-item-description">
-              Опишите свои эмоции:
-            </p>
-            <textarea class="form__list-item-input" name="user-feedback-text" placeholder="Опишите подробно все свои восторги" rows="6"></textarea>
-          </li> -->
-        <!-- </ul> -->
         <button class="form__button" type="submit">
           Отправить отзыв
         </button>
