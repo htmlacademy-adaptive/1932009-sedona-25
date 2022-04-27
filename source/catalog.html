@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/fav-icon-svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/fav-icon-apple.png">
-  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>SEDONA</title>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <svg width="185" height="96" viewBox="0 0 185 96" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M185 0H0L79.8097 90.1011C86.8489 97.9663 98.2503 97.9663 105.289 90.1011L185 0Z" fill="#81B3D3" />
         <path d="M42.8296 0.696915L92.0043 58.8395L140.882 1.09515L42.8296 0.696915Z" fill="#23A9E1" />
@@ -104,7 +104,7 @@
     <nav class="main-header__nav main-nav">
       <ul class="main-nav__list site-list *site-list--close">
         <li class="site-list__item">
-          <a class="site-list__link" href="#">
+          <a class="site-list__link" href="index.html">
             Главная
           </a>
         </li>
@@ -114,12 +114,12 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">
+          <a class="site-list__link" href="form.html">
             Форма отзыва
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">
+          <a class="site-list__link" href="https://htmlacademy.ru/">
             HTML ACADEMY
           </a>
         </li>
@@ -143,37 +143,57 @@
     </p>
     <section class="photos">
       <h2 class="visually-hidden">Фото презентация города Седона и его окрестностей.</h2>
-      <ul class="photos__list photos-list">
-        <li class="photos-list__item">
-          <img class="photos-list__image" src="" alt="">
-          <div class="photos-list__image-footer image-footer">
-            <span class="image-footer__title">Неродные просторы</span>
-            <span class="image-footer__description">Автор фото: Борис</span>
-            <span class="image-footer__like-number">1350</span>
+      <ul class="photos__list">
+        <li class="photos__item">
+          <img class="photos__image" src="" alt="">
+          <div class="photos__image-footer">
+            <span class="photos__image-footer-title">Неродные просторы</span>
+            <span class="photos__image-footer-description">Автор фото: Борис</span>
+            <button class="photos__image-footer-button">
+              <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+            </button>
+            <span class="photos__image-footer-like-number">1350</span>
           </div>
         </li>
-        <li class="photos-list__item">
-          <img class="photos-list__image" src="" alt="">
-          <div class="photos-list__image-footer image-footer">
-            <span class="image-footer__title">Местная растительность</span>
-            <span class="image-footer__description">Автор фото: Сергей</span>
-            <span class="image-footer__like-number">145</span>
+        <li class="photos__item">
+          <img class="photos__image" src="" alt="">
+          <div class="photos__image-footer">
+            <span class="photos__image-footer-title">Местная растительность</span>
+            <span class="photos__image-footer-description">Автор фото: Сергей</span>
+            <button class="photos__image-footer-button">
+              <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+            </button>
+            <span class="photos__image-footer-like-number">145</span>
           </div>
         </li>
-        <li class="photos-list__item">
-          <img class="photos-list__image" src="" alt="">
-          <div class="photos-list__image-footer image-footer">
-            <span class="image-footer__title">Дорога на север</span>
-            <span class="image-footer__description">Автор фото: Пётр</span>
-            <span class="image-footer__like-number">96</span>
+        <li class="photos__item">
+          <img class="photos__image" src="" alt="">
+          <div class="photos__image-footer">
+            <span class="photos__image-footer-title">Дорога на север</span>
+            <span class="photos__image-footer-description">Автор фото: Пётр</span>
+            <button class="photos__image-footer-button">
+              <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+            </button>
+            <span class="photos__image-footer-like-number">96</span>
           </div>
         </li>
-        <li class="photos-list__item">
-          <img class="photos-list__image" src="" alt="">
-          <div class="photos-list__image-footer image-footer">
-            <span class="image-footer__title">Мост Дьявола</span>
-            <span class="image-footer__description">Автор фото: Антон</span>
-            <span class="image-footer__like-number">254</span>
+        <li class="photos__item">
+          <img class="photos__image" src="" alt="">
+          <div class="photos__image-footer">
+            <span class="photos__image-footer-title">Мост Дьявола</span>
+            <span class="photos__image-footer-description">Автор фото: Антон</span>
+            <buttonю class="photos__image-footer-button">
+              <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+            </button>
+            <span class="photos__image-footer-like-number">254</span>
           </div>
         </li>
       </ul>
