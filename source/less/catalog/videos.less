@@ -1,0 +1,44 @@
+.videos {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 0 200px;
+  }
+}
+
+.videos__slogan {
+  margin: 0;
+  text-align: center;
+}
+
+.videos__intro {
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 445px;
+  }
+}
+
+.videos__video {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
+}
