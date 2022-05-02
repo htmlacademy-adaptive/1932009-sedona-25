@@ -1,0 +1,146 @@
+.form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__group:nth-of-type(1) {
+  margin-bottom: 64px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__group:nth-of-type(2) {
+  margin-bottom: 59px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__group:nth-of-type(3) {
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
+  }
+}
+
+.form__group:nth-of-type(4) {
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
+  }
+}
+
+.form__group:nth-of-type(5) {
+  margin-bottom: 56px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
+  }
+}
+
+.form__legend {
+  padding: 0;
+  text-align: center;
+}
+
+.form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__textarea {
+  width: 280px;
+  resize: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+}
+
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__group--full-name {
+    width: 280px;
+
+    @media (min-width: @desktop-width) {
+      width: 430px;
+    }
+  }
+
+  .form__group--user-contacts {
+    width: 298px;
+
+    @media (min-width: @desktop-width) {
+      width: 402px;
+    }
+  }
+
+  .form__list-item--common {
+    width: 280px;
+  }
+
+  .form__list-item--places {
+    width: 224px;
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+    }
+  }
+
+  .form-list--emotions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__list--places {
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    column-gap: 32px;
+    row-gap: 16px;
+
+    @media (min-width: @desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__group--feedback {
+    width: 960px;
+    padding: 0 96px;
+    box-sizing: border-box;
+  }
+}
