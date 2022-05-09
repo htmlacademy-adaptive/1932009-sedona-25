@@ -25,6 +25,16 @@
   background-color: inherit;
   background-image: url("../img/toggle-1.svg");
 
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -39,6 +49,15 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;

@@ -26,11 +26,8 @@
 
 .site-list__item {
   width: 320px;
-  min-height: 26px;
-  padding-top: 17px;
-  padding-bottom: 12px;
   display: flex;
-  justify-content: space-around;
+  position: relative;
 
   @media (max-width: 767px) {
     border-bottom: solid 1px rgba(1, 1, 1, 0.2);
@@ -61,7 +58,7 @@
   position: relative;
 
   @media (max-width: 767px) {
-    &::after {
+    &::before {
       position: absolute;
       content: "";
       width: 320px;
@@ -89,15 +86,58 @@
   text-decoration: none;
   font-weight: 700;
   display: block;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 26px;
+
+  @media (max-width: 767px) {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 14px;
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+      background-color: #5496bd;
+    }
+
+    &:focus {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+      outline: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     color: @black-0;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 18px;
     font-size: 14px;
     line-height: 21px;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:focus {
+      color: rgba(0, 0, 0, 0.3);
+      outline: none;
+    }
   }
 }
 
+.site-list__link--current {
+  cursor: default;
+  color: #766357;
+}
+
+.site-list__link--current:hover {
+  cursor: default;
+  color: #766357;
+}
+
+.site-list__link--current:focus {
+  cursor: default;
+  color: #766357;
+  outline: none;
+}

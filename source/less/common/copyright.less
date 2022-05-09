@@ -4,9 +4,9 @@
   padding-left: 5px;
 }
 
-.copyright__link {
-  display: block;
-}
+// .copyright__link {
+//   display: block;
+// }
 
 .copyright__icon {
   fill: @black-0;
@@ -16,4 +16,25 @@
   display: grid;
   grid-template-columns: 108px 48px;
   grid-template-rows: 34px;
+  text-decoration: none;
+}
+
+.copyright:focus {
+  outline: none;
+}
+
+.copyright:hover > .copyright__text {
+  color: #81b3d2;
+}
+
+.copyright:hover > svg {
+  fill: #81b3d2;
+}
+
+.copyright:focus > .copyright__text {
+  color: #b3b3b3;
+}
+
+.copyright:focus > svg {
+  fill: #b3b3b3;
 }
