@@ -135,7 +135,9 @@
 }
 
 .site-list__link--current:hover {
-  background-color: #81b3d2;
+  @media (max-width: 767px) {
+    background-color: #81b3d2;
+  }
 
   @media (min-width: @tablet-width) {
     cursor: default;
@@ -144,8 +146,10 @@
 }
 
 .site-list__link--current:focus {
-  background-color: #81b3d2;
-  color: @white;
+  @media (max-width: 767px) {
+    background-color: #81b3d2;
+    color: @white;
+  }
 
   @media (min-width: @tablet-width) {
     cursor: default;

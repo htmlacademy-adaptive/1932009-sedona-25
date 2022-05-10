@@ -18,19 +18,34 @@
 .videos__slogan {
   margin: 0;
   text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: @black-0;
+  margin-bottom: 32px;
 }
 
 .videos__intro {
   margin: 0 auto;
   text-align: center;
+  width: 270px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 38px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 445px;
+    margin-bottom: 76px;
   }
 }
 
 .videos__video {
   display: block;
+
+  @media (max-width: 767px) {
+    margin-bottom: 28.5px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 648px;
