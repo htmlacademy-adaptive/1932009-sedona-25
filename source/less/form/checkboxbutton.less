@@ -7,6 +7,19 @@
   }
 }
 
+.checkboxbutton:hover > .checkboxbutton__mark {
+  background-color: #e5e5e5;
+}
+
+.checkboxbutton__input:checked + .checkboxbutton__mark {
+  background-color: #d5d5d5;
+}
+
+.checkboxbutton__input:checked + .checkboxbutton__mark::before {
+  opacity: 0.3;
+  display: block;
+}
+
 .checkboxbutton__label {
   display: block;
   padding-left: 65px;
@@ -40,6 +53,3 @@
   display: none;
 }
 
-.checkboxbutton__input:checked + .checkboxbutton__mark::before {
-  display: block;
-}
