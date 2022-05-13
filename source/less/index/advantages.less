@@ -1,7 +1,7 @@
 .advantages__item-text-container {
   background-color: @blue;
   color: @white;
-  padding: 39px 10px 35px;
+  padding: 75px 10px 37px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
@@ -167,6 +167,33 @@
 .advantages__item-purchases {
   margin: 0;
   margin-bottom: 52px;
+}
+
+.advantages__item-wrapper-1 {
+  @media (max-width: 767px) {
+    position: relative;
+  }
+}
+
+.advantages__item-wrapper-1::before,
+.advantages__item-wrapper-1::after {
+  @media (max-width: 767px) {
+    position: absolute;
+    content: "";
+    width: 384px;
+    height: 37px;
+    background-image: url("../img/city-triangle-right.svg");
+    top: 0;
+    left: 160px;
+    transform: rotate(180deg);
+  }
+}
+
+.advantages__item-wrapper-1::after {
+  @media (max-width: 767px) {
+    left: -224px;
+    transform: scale(1, -1);
+  }
 }
 
 @media (min-width: @tablet-width) {
