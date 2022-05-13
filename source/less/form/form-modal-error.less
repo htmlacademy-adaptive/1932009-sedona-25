@@ -1,0 +1,89 @@
+.form-modal-error {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -160px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -384px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -600px;
+  }
+}
+
+.form-modal-error--close {
+  display: none;
+}
+
+.form-modal-error__container {
+  width: 320px;
+  padding-top: 116px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding-top: 283px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding-top: 244px;
+  }
+}
+
+.form-modal-error__window {
+  background-color: @white;
+  padding: 45px 42px 35px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 60px 50px;
+    width: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+.form-modal-error__title {
+  color: @black-0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form-modal-error__title br {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+}
+
+.form-modal-error__message {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
+
+.form-modal-error__button {
+  width: 180px;
+  margin: 0 auto;
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+  }
+}
