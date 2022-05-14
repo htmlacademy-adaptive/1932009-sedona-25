@@ -13,11 +13,11 @@
 </head>
 
 <body class="page__body">
-  <!-- (main-header--mobile-opened) - старое решение
+<div class="page__desktop-index-wrapper">
+  <!-- (main-header--mobile-opened)   - старое решение
     1. main-header                    - js
     2. main-header main-header--no-js - не работает js   -->
-<div class="page__desktop-index-wrapper">
-  <header class="main-header main-header--no-js">
+  <header class="main-header">
     <a class="main-header__logo">
       <svg width="185" height="96" viewBox="0 0 185 96" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M185 0H0L79.8097 90.1011C86.8489 97.9663 98.2503 97.9663 105.289 90.1011L185 0Z" fill="#81B3D3" />
@@ -106,10 +106,10 @@
       </svg>
     </a>
     <nav class="main-header__nav main-nav">
-      <!-- 1. site-list site-list--js site-list--close - меню Закрыто
-           2. site-list site-list--js                  - меню Открыто
-           3. site-list                                - не работает js -->
-      <ul class="main-nav__list site-list">
+      <!-- 1. site-list site-list--close - меню Закрыто
+           2. site-list                  - меню Открыто
+           3. site-list site-list--no-js - не работает js -->
+      <ul class="main-nav__list site-list site-list--close">
         <li class="site-list__item">
           <a class="site-list__link site-list__link--current" href="#">
             Главная
@@ -132,9 +132,9 @@
         </li>
       </ul>
       <!-- 1. main-nav__toggle                           - меню Закрыто
-           2. main-nav__toggle + main-nav__toggle--close - меню Открыто
-           3. visually-hidden                            - не работает js -->
-      <button class="visually-hidden" type="button">
+           2. main-nav__toggle main-nav__toggle--close   - меню Открыто
+           3. main-nav__toggle main-nav__toggle--no-js   - не работает js -->
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Кнопка главного меню.</span>
       </button>
     </nav>

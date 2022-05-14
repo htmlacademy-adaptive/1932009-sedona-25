@@ -7,6 +7,12 @@
   align-items: center;
   background-color: @blue;
 
+  @media (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   @media (min-width: @tablet-width) and (max-width: 1199px) {
     flex-direction: row;
     width: 768px;
@@ -20,11 +26,9 @@
   }
 }
 
-.site-list--js {
+.site-list--no-js {
   @media (max-width: 767px) {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: static;
   }
 }
 
