@@ -1,5 +1,19 @@
 .main-container {
   flex-grow: 1;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    width: 320px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .main-container__intro-image-container {
@@ -38,11 +52,10 @@
   width: 600px;
   height: 57px;
   background-image: url("../img/intro-triangle-left.svg");
-  top: 332px;
+  bottom: 0;
   left: -440px;
 
   @media (min-width: @tablet-width) {
-    top: 461px;
     left: -216px;
   }
 
@@ -53,11 +66,9 @@
 
 .main-container__intro-image-container::after {
   transform: scale(-1, 1);
-  top: 332px;
   left: 160px;
 
   @media (min-width: @tablet-width) {
-    top: 461px;
     left: 384px;
   }
 
