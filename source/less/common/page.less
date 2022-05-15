@@ -11,4 +11,36 @@
   color: #333333;
   text-transform: uppercase;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
+
+.page__desktop-index-wrapper {
+  @media (min-width: @desktop-width) {
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__desktop-index-wrapper::before,
+  .page__desktop-index-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 55px;
+    height: 100%;
+  }
+
+  .page__desktop-index-wrapper::before {
+    right: 100%;
+    box-shadow: inset -55px 0 55px -55px rgba(0, 2, 3, 0.15);
+  }
+
+  .page__desktop-index-wrapper::after {
+    left: 100%;
+    box-shadow: inset 55px 0 55px -55px rgba(0, 2, 3, 0.15);
+  }
+}
+

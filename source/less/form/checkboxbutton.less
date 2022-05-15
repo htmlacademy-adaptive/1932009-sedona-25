@@ -1,0 +1,54 @@
+.checkboxbutton {
+  display: block;
+  position: relative;
+
+  @media (max-width: 767px) {
+    margin-bottom: 31px;
+  }
+}
+
+.checkboxbutton:hover > .checkboxbutton__mark {
+  background-color: #e5e5e5;
+}
+
+.checkboxbutton__input:checked + .checkboxbutton__mark {
+  background-color: #d5d5d5;
+}
+
+.checkboxbutton__input:checked + .checkboxbutton__mark::before {
+  opacity: 0.3;
+  display: block;
+}
+
+.checkboxbutton__label {
+  display: block;
+  padding-left: 65px;
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @black-0;
+  text-transform: none;
+}
+
+.checkboxbutton__mark {
+  position: absolute;
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  top: 1px;
+  left: 1px;
+}
+
+.checkboxbutton__mark::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/form/checked.svg");
+  top: 14px;
+  left: 15px;
+  display: none;
+}

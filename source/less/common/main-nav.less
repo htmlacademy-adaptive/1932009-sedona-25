@@ -1,8 +1,4 @@
 .main-nav {
-  position: relative;
-  display: flex;
-
-
   @media (min-width: @tablet-width) and (max-width: 1199px) {
     width: 768px;
   }
@@ -15,15 +11,23 @@
 .main-nav__toggle {
   width: 23px;
   height: 22px;
-  border: none;
-  display: block;
   padding: 0;
-  margin-left: auto;
-  margin-right: 19px;
-  margin-top: 17px;
-  margin-bottom: 17px;
+  border: none;
   background-color: inherit;
+  position: absolute;
+  top: 17px;
+  right: 19px;
   background-image: url("../img/toggle-1.svg");
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:focus {
+    opacity: 0.3;
+    cursor: pointer;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -31,16 +35,33 @@
 }
 
 .main-nav__toggle--close {
-  width: 23px;
-  height: 22px;
-  border: none;
-  background-color: inherit;
   background-image: url("../img/toggle-2.svg");
-  position: absolute;
-  top: 17px;
-  right: 19px;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
 }
+
+.main-nav__toggle--no-js {
+  display: none;
+}
+
+// .main-nav__toggle--close {
+//   width: 23px;
+//   height: 22px;
+//   border: none;
+//   background-color: inherit;
+//   background-image: url("../img/toggle-2.svg");
+//   position: absolute;
+//   top: 17px;
+//   right: 19px;
+
+//   &:hover {
+//     cursor: pointer;
+//     opacity: 0.6;
+//   }
+
+//   &:focus {
+//     opacity: 0.3;
+//   }
+
+//   @media (min-width: @tablet-width) {
+//     display: none;
+//   }
+// }

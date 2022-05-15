@@ -1,5 +1,17 @@
+.catalog-main {
+  flex-grow: 1;
+}
+
 .catalog-main__intro-image-container {
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .catalog-main__slogan {

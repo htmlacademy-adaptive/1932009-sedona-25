@@ -9,4 +9,23 @@
   text-align: center;
   display: block;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button--form {
+  padding: 15px 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+}
+
+.button:hover {
+  background-color: #669ec0;
+  cursor: pointer;
+}
+
+.button:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
