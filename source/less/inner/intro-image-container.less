@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 765px;
@@ -16,6 +17,38 @@
     width: 1200px;
     min-height: 301px;
     background-image: url("../img/inner-intro-image-desktop.jpg");
+  }
+}
+
+.intro-image-container::before,
+.intro-image-container::after {
+  position: absolute;
+  content: "";
+  width: 600px;
+  height: 57px;
+  background-image: url("../img/intro-triangle-left.svg");
+  bottom: 0;
+  left: -440px;
+
+  @media (min-width: @tablet-width) {
+    left: -216px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+  }
+}
+
+.intro-image-container::after {
+  transform: scale(-1, 1);
+  left: 160px;
+
+  @media (min-width: @tablet-width) {
+    left: 384px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 600px;
   }
 }
 

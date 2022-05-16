@@ -1,5 +1,19 @@
 .catalog-main {
   flex-grow: 1;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    width: 320px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .catalog-main__intro-image-container {
