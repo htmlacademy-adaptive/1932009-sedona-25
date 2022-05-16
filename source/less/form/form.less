@@ -57,6 +57,10 @@
     width: 100%;
     margin-bottom: 20px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .form__legend br {
@@ -330,11 +334,11 @@
   .form-list--emotions {
     display: flex;
     flex-wrap: wrap;
-    padding: 28px 36px 48px;
+    padding: 0 36px 48px;
     column-gap: 16px;
 
     @media (min-width: @desktop-width) {
-      padding: 45px 63px 73px;
+      padding: 0 63px 73px;
       justify-content: space-between;
       width: 960px;
       box-sizing: border-box;
@@ -343,8 +347,6 @@
 
   .form__group--places {
     margin: 0 auto;
-    margin-bottom: 42px;
-    padding-top: 28px;
 
     @media (min-width: @desktop-width) {
       padding-top: 0;
@@ -362,7 +364,7 @@
       flex-wrap: wrap;
       width: 960px;
       box-sizing: border-box;
-      padding: 59px 44.5px 97px;
+      padding: 0 44.5px 97px;
       justify-content: space-between;
     }
   }
