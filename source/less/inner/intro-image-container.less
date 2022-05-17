@@ -7,16 +7,28 @@
   justify-content: space-around;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: ("../img/inner-intro-image-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     width: 765px;
     min-height: 290px;
     background-image: url("../img/inner-intro-image-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: ("../img/inner-intro-image-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
     min-height: 301px;
     background-image: url("../img/inner-intro-image-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: ("../img/inner-intro-image-desktop@2x.jpg");
+    }
   }
 }
 
