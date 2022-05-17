@@ -6,9 +6,10 @@
   align-items: center;
   justify-content: space-around;
   position: relative;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: ("../img/inner-intro-image-mobile@2x.jpg");
+    background-image: url("../img/inner-intro-image-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
@@ -17,7 +18,7 @@
     background-image: url("../img/inner-intro-image-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: ("../img/inner-intro-image-tablet@2x.jpg");
+      background-image: url("../img/inner-intro-image-tablet@2x.jpg");
     }
   }
 
@@ -27,7 +28,7 @@
     background-image: url("../img/inner-intro-image-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: ("../img/inner-intro-image-desktop@2x.jpg");
+      background-image: url("../img/inner-intro-image-desktop@2x.jpg");
     }
   }
 }
