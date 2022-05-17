@@ -11,18 +11,41 @@
   }
 }
 
+.radiobutton__input:checked + .radiobutton__mark {
+  background-color: #f2f2f2;
+}
+
+.radiobutton__input:checked + .radiobutton__mark::before {
+  background-color: @black-3;
+  display: block;
+}
+
 .radiobutton:hover > .radiobutton__mark {
   background-color: #e5e5e5;
 }
 
-.radiobutton__input:checked + .radiobutton__mark {
+.radiobutton:active > .radiobutton__mark {
   background-color: #d5d5d5;
 }
 
-.radiobutton__input:checked + .radiobutton__mark::before {
+.radiobutton:active > .radiobutton__mark::before {
   background-color: rgba(51, 51, 51, 0.3);
   display: block;
 }
+
+.radiobutton__input:disabled + .radiobutton__mark {
+  background-color: rgba(242, 242, 242, 0.4);
+}
+
+.radiobutton__input:disabled + .radiobutton__mark::before {
+  display: none;
+}
+
+.radiobutton__input:disabled:checked + .radiobutton__mark::before {
+  background-color: rgba(51, 51, 51, 0.2);
+  display: block;
+}
+
 
 .radiobutton__label {
   display: block;
