@@ -69,7 +69,7 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/to-sprite-svg/*.svg', '!source/img/sprite.svg'])
+gulp.src(['source/img/**/*.svg', '!source/img/to-sprite-svg/*.svg', '!source/img/sprite.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
@@ -89,6 +89,7 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
+'source/*.webmanifest'
 ], {
 base: 'source'
 })
@@ -142,24 +143,13 @@ styles,
 html,
 svg,
 sprite,
-createWebp
-),
-);
+createWebp),
+gulp.series(server, watcher));
 
 // Default
 
 export default gulp.series(
-clean,
-copy,
-copyImages,
-gulp.parallel(
 styles,
-html,
-svg,
-sprite,
-createWebp
-),
-gulp.series(
 server,
 watcher
-));
+);
