@@ -69,7 +69,7 @@ webp: {}
 // SVG
 
 const svg = () => {
-return gulp.src(['source/img/**/*.svg', '!source/img/to-sprite-svg/*.svg', '!source/img/sprite.svg', '!source/img/background-svg/*.svg'])
+return gulp.src(['source/img/**/*.svg', '!source/img/to-sprite-svg/*.svg', '!source/img/background-svg/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 }
@@ -145,6 +145,6 @@ export const build = gulp.series(clean, copy, optimizeImages,
 
 // Default
 
-export default gulp.series(clean, copy, copyImages, copySvg,
-               gulp.parallel(styles, html),
+export default gulp.series(clean, copy, copyImages,
+               gulp.parallel(styles, html, svg, sprite, createWebp),
                gulp.series(server, watcher));
