@@ -68,10 +68,16 @@ webp: {}
 
 // SVG
 
-const svg = () =>
-gulp.src(['source/img/**/*.svg', '!source/img/to-sprite-svg/*.svg', '!source/img/sprite.svg'])
+const svg = () => {
+return gulp.src(['source/img/**/*.svg', '!source/img/to-sprite-svg/*.svg', '!source/img/sprite.svg', '!source/img/background-svg/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
+}
+
+const copySvg = () => {
+return gulp.src(['source/img/**/*.svg', '!source/img/to-sprite-svg/*.svg', '!source/img/background-svg/*.svg'])
+.pipe(gulp.dest('build/img'));
+}
 
 const sprite = () => {
 return gulp.src('source/img/to-sprite-svg/*.svg')
@@ -134,22 +140,11 @@ gulp.watch('source/*.html', gulp.series(html, reload));
 
 // Build
 
-export const build = gulp.series(
-clean,
-copy,
-optimizeImages,
-gulp.parallel(
-styles,
-html,
-svg,
-sprite,
-createWebp),
-gulp.series(server, watcher));
+export const build = gulp.series(clean, copy, optimizeImages,
+                     gulp.parallel(styles, html, svg, sprite, createWebp));
 
 // Default
 
-export default gulp.series(
-styles,
-server,
-watcher
-);
+export default gulp.series(clean, copy, copyImages, copySvg,
+               gulp.parallel(styles, html),
+               gulp.series(server, watcher));
