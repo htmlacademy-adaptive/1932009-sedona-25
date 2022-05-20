@@ -141,10 +141,10 @@ gulp.watch('source/*.html', gulp.series(html, reload));
 // Build
 
 export const build = gulp.series(clean, copy, optimizeImages,
-                     gulp.parallel(styles, html, svg, sprite, createWebp));
+gulp.parallel(styles, html, svg, sprite, createWebp));
 
 // Default
 
 export default gulp.series(clean, copy, copyImages,
-               gulp.parallel(styles, html, svg, sprite, createWebp),
-               gulp.series(server, watcher));
+gulp.parallel(styles, html, svg, sprite, createWebp),
+gulp.series(server, watcher));
