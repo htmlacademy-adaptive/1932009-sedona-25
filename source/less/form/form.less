@@ -6,6 +6,10 @@
 
 .form__group:nth-of-type(1) {
   margin-bottom: 64px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .form__group:nth-of-type(2) {
@@ -17,7 +21,7 @@
 }
 
 .form__group:nth-of-type(3) {
-  margin-bottom: 49px;
+  margin-bottom: 37.7px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -25,10 +29,10 @@
 }
 
 .form__group:nth-of-type(4) {
-  margin-bottom: 49px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,12 +64,44 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.form__legend--full-name {
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 63px;
+  }
+}
+
+.form__legend--places {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 27.3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60.3px;
+  }
+}
+
+.form__legend--emotions {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 43px;
   }
 }
 
 .form__legend br {
   @media (max-width: 767px) {
-    display: none;
+    display: inline;
   }
 }
 
@@ -83,7 +119,7 @@
 
 .form__legend--contacts {
   @media (min-width: @tablet-width) {
-    padding-right: 60px;
+    // padding-right: 20px;
   }
 }
 
@@ -92,6 +128,12 @@
   @media (min-width: @tablet-width) {
     position: relative;
     width: 100%;
+  }
+}
+
+.form__legend--grey-lines-places {
+  @media (max-width: 767px) {
+    margin-bottom: 19px;
   }
 }
 
@@ -217,6 +259,7 @@
 }
 
 .form__textarea {
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 280px;
   height: 150px;
   resize: none;
@@ -233,6 +276,7 @@
 
   @media (min-width: @tablet-width) {
     width: 648px;
+    height: 160px;
     margin: 0 auto;
     margin-bottom: 48px;
   }
@@ -252,7 +296,7 @@
 .form__button-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 53px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -263,7 +307,7 @@
   @media (min-width: @desktop-width) {
     width: 768px;
     margin: 0 auto;
-    margin-bottom: 64px;
+    margin-bottom: 47px;
   }
 }
 
@@ -284,14 +328,12 @@
 
   .form__group--user-contacts {
     width: 298px;
-    margin-left: auto;
-
-    @media (min-width: @tablet-width) {
-      position: relative;
-    }
+    margin-left: 51px;
+    position: relative;
 
     @media (min-width: @desktop-width) {
       width: 402px;
+      margin-left: 66px;
     }
   }
 
@@ -302,12 +344,12 @@
       width: 1px;
       height: 338px;
       background-color: #dbdbdb;
-      top: -48px;
-      left: -35px;
+      top: -53px;
+      left: -8px;
     }
 
     @media (min-width: @desktop-width) {
-      left: -65px;
+      left: -2px;
     }
   }
 
@@ -320,6 +362,11 @@
       display: flex;
       flex-direction: column;
       align-items: end;
+      margin-left: 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 62px;
     }
   }
 
@@ -342,11 +389,11 @@
   .form-list--emotions {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 36px 48px;
+    padding: 0 36px 38px;
     column-gap: 16px;
 
     @media (min-width: @desktop-width) {
-      padding: 0 63px 73px;
+      padding: 0 54px 61px;
       justify-content: space-between;
       width: 960px;
       box-sizing: border-box;
@@ -363,25 +410,19 @@
 
   .form__list--places {
     display: grid;
-    grid-template-columns: repeat(2, 240px);
+    grid-template-columns: repeat(2, 226px);
     column-gap: 32px;
-    row-gap: 16px;
+    row-gap: 24px;
 
     @media (min-width: @desktop-width) {
       display: flex;
       flex-wrap: wrap;
       width: 960px;
       box-sizing: border-box;
-      padding: 0 44.5px 97px;
+      padding: 0 44.5px 48px;
       justify-content: space-between;
     }
   }
-
-  // .form__group--places .form__legend {
-  //   @media (min-width: @tablet-width) {
-  //     width: min-content;
-  //   }
-  // }
 
   .form__group--feedback .form__legend {
     margin-bottom: 28px;
@@ -397,6 +438,7 @@
   padding: 12px;
   color: @black-0;
   background-color: #f2f2f2;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -441,10 +483,12 @@
 
   @media (max-width: 767px) {
     align-self: end;
+    margin-top: 3px;
   }
 
   @media (min-width: @tablet-width) {
     width: 160px;
     margin-top: 23px;
+    font-size: 14px;
   }
 }

@@ -5,7 +5,7 @@
   margin: 0 auto;
 
   @media (max-width: 767px) {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @tablet-width) {
@@ -22,18 +22,23 @@
 
 .photos__title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 30px;
   line-height: 26px;
   margin: 0;
   text-align: center;
   color: @black-0;
 
   @media (max-width: 767px) {
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -46,7 +51,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 87px;
     width: 445px;
   }
 }
@@ -186,6 +191,11 @@
 .photos__icon-thumb {
   fill: rgba(0, 0, 0, 0.3);
 
+  @media (min-width: @tablet-width) {
+    margin-top: 6px;
+    margin-right: 5px;
+  }
+
   @media (min-width: @desktop-width) {
     fill: @white;
   }
@@ -206,11 +216,14 @@
 .photos__image-footer-like-number {
   color: @black-0;
   font-weight: 700;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 6px;
+  margin-left: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 5px;
+    margin-top: 9px;
     margin-left: 5px;
   }
 

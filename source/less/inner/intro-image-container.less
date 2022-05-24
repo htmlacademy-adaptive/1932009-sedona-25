@@ -8,6 +8,8 @@
   justify-content: space-around;
   position: relative;
   background-size: cover;
+  z-index: -1;
+  background-position-y: bottom;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/inner-intro-image-mobile@2x.jpg");
@@ -66,9 +68,14 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .intro-image-container__intro-text {
+.intro-image-container__intro-text {
+  @media (max-width: 767px) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
     width: 456.9px;
     height: 77.6px;
+    margin-bottom: 23px;
   }
 }
