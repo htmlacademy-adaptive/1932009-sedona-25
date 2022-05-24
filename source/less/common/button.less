@@ -1,6 +1,7 @@
 .button {
   background-color: @blue;
   color: @white;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -13,10 +14,19 @@
 }
 
 .button--form {
-  padding: 15px 10px;
+  padding-top: 19px;
+  padding-bottom: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media (min-width: @tablet-width) {
     width: 324px;
+    padding-left: 7px;
+    padding-right: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 383px;
   }
 }
 
